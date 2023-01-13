@@ -1,0 +1,172 @@
+/* Style Section */
+html{
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: thin;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+
+h2{
+    text-align: center;
+}
+
+#ListArea{
+    overflow: hidden;
+    font-size: 40px;
+}
+
+#ListArea:hover
+{
+    overflow: auto;
+}
+
+#Bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+}
+
+button{
+    cursor: pointer;
+    background-color: #e94040; /* Green */
+    border: 2px outset #a12d2d;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: #e94040;
+    background-color: white;
+}
+
+ul li{
+    cursor: pointer;
+}
+
+span{
+    font-size: 24px;
+    text-align: center;
+    padding: 4px;
+}
+
+#search, #remove{
+    padding: 7px 16px;
+}
+
+#KanjiInput{
+    border: 2px outset #e94040;
+    border-radius: 4px;
+    margin-right: 2px;
+    width: auto;
+}
+
+#SelectDiv, #SearchDiv{
+    font-size: 14px;
+}
+
+#KanjiSelection{
+    border: 2px outset #e94040;
+    border-radius: 4px;
+}
+
+a{
+    color: #e94040;
+}
+
+a:hover{
+    color: #b32c2c;
+}
+
+p{
+    text-align: center;
+}
+
+/* Grid Section */
+
+#KanjiSection{
+    display: grid;
+    grid-template-areas: "Library New Save "
+                         "List Type Search "
+                         "List Kanji Kanji "
+                         "List Kanji Kanji ";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr;
+
+    border: 8px #e94040 outset;
+    padding: 10px;
+
+    margin: auto;
+    margin-top: 50px;
+    max-width: 50%;
+    min-width: 750px;
+    max-height: 320px;
+}
+
+#ListArea{
+    grid-area: List;
+    border: 4px outset #e94040;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    padding-left: 55px;
+    border-radius: 10px;
+}
+
+#kanjiLibrary{
+    grid-area: Library;
+}
+
+#KanjiDisplay{
+    grid-area: Kanji;
+    display: flex;
+    margin: 1px;
+    border: 4px outset #e94040;
+    border-radius: 10px;
+}
+
+#kanjiSymbol{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 140px;
+    align-self: center;
+}
+
+#KanjiText{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    align-self: center;
+    flex-grow: 0;
+    
+}
+
+#KanjiSave{
+    grid-area: Save;
+    margin: 5px;
+}
+
+#Search{
+    grid-area: Search;
+    margin: 5px;
+}
+
+#KanjiButton{
+    grid-area: New;
+    margin: 5px;
+}
+
+.widgets{
+    grid-area: Type;
+    margin: 5px;
+}

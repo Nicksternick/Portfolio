@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+}
+
+h1, h2, p{
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(255, 244, 97);
+}
+
+h1, h2{
+    font-family: 'Stick', sans-serif;
+}
+
+h2, p, a{
+    color: rgb(255, 244, 97);
+}
+
+a:hover{
+    color: red;
+}
+
+p, a{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#MainBlock, #DocumentBlock{
+    display: flex;
+    flex-direction: column;
+    border: 7px solid rgb(255, 36, 36);
+    border-radius: 10px;
+    margin: auto;
+    max-width: 700px;
+    background-color: brown;
+}
+
+#MainBlock img{
+    border: 5px solid rgb(255, 36, 36);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
