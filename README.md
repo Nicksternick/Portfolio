@@ -5,7 +5,7 @@
 - Project_2: A project utilizing agents to create a prototype for a sandbox game
 
 ## SFML (C++)
--A03-Attack
+- A03-Attack-and-Heal: Class Project. Practice pulling for inputs and rendering sprites on the screen
 
 ## PIXIJS (JavaScript)
 - Neko Samurai: A endless runner game using PIXIJS
