@@ -1,13 +1,13 @@
 # Portfolio
 
-## Unity (C#)
+## Unity
 - SHMUP: The project name for a shooter game called Dread Zone, made in Unity
 - Project_2: A project utilizing agents to create a prototype for a sandbox game
 
-## SFML (C++)
+## SFML
 - A03-Attack-and-Heal: Class Project. Practice pulling for inputs and rendering sprites on the screen
 
-## PIXIJS (JavaScript)
+## PIXIJS
 - Neko Samurai: A endless runner game using PIXIJS
 
 ## Websites
