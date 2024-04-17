@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Info -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporary Title To Avoid Error</title>
+    <!-- Links -->
+    <link href="./styles/new-style.css" type="text/css" rel="stylesheet" />
+    <script src="./src/loader.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <section id="section-main">
+        <section id="section-canvas">
+            <canvas width="854" height="480"></canvas>
+        </section>
+
+        <section id="section-controls">
+            <button id="btn-play">Play ></button>
+            <button id="btn-pause">Pause ||</button>
+            <span>
+                Volume: <input type="range" id="slider-volume" min="0" max="2" value="1" step="0.01">
+                <span id="label-volume">???</span>
+            </span>
+        </section>
+    </section>
+
+    <section id="section-settings">
+        <!-- Music Selection Setting -->
+        <div id="div-song">
+            <h2>Songs and Audio Effects</h2>
+            <div>
+                <!-- Pre Installed Songs -->
+                <div>
+                    <label for="select-song">Select a Song:</label>
+                    <select id="select-song">
+                    </select>
+                </div>
+
+                <!-- Allow user -->
+                <div>
+                    <label for="input-song">Upload a Song:</label>
+                    <input type="file" accept=".mp3, .mp4" id="input-song">
+                </div>
+                <div>
+                    <button id="btn-list-play">Play Song From List</button>
+                    <button id="btn-file-play">Play Song From File</button>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <label for="slider-highshelf">Highshelf Range: 0</label>
+                <div>
+                    <input type="range" id="slider-highshelf" min="0" max="10" value="0">
+                </div>
+                <br>
+                    <label for="slider-lowshelf">Lowshelf Range: 0</label>
+                <div>
+                    <input type="range" id="slider-lowshelf" min="0" max="10" value="0">
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="cb-frequency" checked>
+                    <label for="cb-frequency">Use Frequency Data</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visualizer Settings -->
+        <div id="div-visual">
+            <h2>Visualization Options</h2>
+            <div>
+                <input type="checkbox" checked id="cb-gradient">
+                <label>Gradient</label>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <input type="checkbox" checked id="cb-circle">
+                    <label>Circle</label>
+                </div>
+                <div>
+                    <input type="range" id="select-circle-min" min="0" max="256" value="0" step="1">
+                    <label for="select-circle-min" id="label-circle-min">Min Analyzed Data: 0</label>
+                </div>
+                <div>
+                    <input type="range" id="select-circle-max" min="0" max="256" value="256" step="1">
+                    <label for="select-circle-max" id="label-circle-max">Max Analyzed Data: 256</label>
+                </div>
+                <div>
+                    <input type="range" id="select-circle-width" min="1" max="10" value="1" step="1">
+                    <label for="select-circle-width" id="label-circle-width">Line Width: 1</label>
+                </div>
+                <div>
+                    <label for="select-circle-fill">Color: </label>
+                    <select class="colors" id="select-circle-fill">
+                    </select>
+                </div>
+                <div>
+                    <label for="select-circle-stroke">Line Color: </label>
+                    <select class="colors" id="select-circle-stroke">
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <input type="checkbox" checked id="cb-line">
+                    <label>Line</label>
+                </div>
+                <div>
+                    <input type="range" id="select-line-min" min="0" max="256" value="0" step="1">
+                    <label for="select-line-min" id="label-line-min">Min Analyzed Data: 0</label>
+                </div>
+                <div>
+                    <input type="range" id="select-line-max" min="0" max="256" value="256" step="1">
+                    <label for="select-line-max" id="label-line-max">Max Analyzed Data: 256</label>
+                </div>
+                <div>
+                    <input type="range" id="select-line-width" min="1" max="10" value="1" step="1">
+                    <label for="select-line-width" id="label-line-width">Line Width: 1</label>
+                </div>
+                <div>
+                    <label for="select-line-fill">Color: </label>
+                    <select class="colors" id="select-line-fill">
+                    </select>
+                </div>
+                <div>
+                    <label for="select-line-fill">Line Color: </label>
+                    <select class="colors" id="select-line-stroke">
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: gisshiri;
+    src: url(../data/gisshiri-font/Gisshiri-vmrWD.ttf);
+}
+
+.box:last-child {
+    margin-bottom: 1.5em;
+}
+
+.gisshiri-font {
+    font-family: gisshiri;
+}

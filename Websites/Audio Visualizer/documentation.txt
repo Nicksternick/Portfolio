@@ -1,0 +1,36 @@
+This is the documentation for HW2: Audio Visualizer
+
+Regarding the two nodes: The two nodes I added were the 
+trebel and bass node, using the BiquadFilterNode
+
+Regarding the sprite classes, there are two:
+-CircleVisualizer: Renders a circle using the line tool. 
+the audio data dictates the radius of the circle
+-LineVisualizer: Renders a line across the width of the canvas.
+the audio data dictates the height of the line 
+
+Also while not a class, the background gradient now is affected by the audio data
+
+Regarding the app data, the data help is:
+- The list of songs
+- The name of songs
+- The list of the colors
+- The default color
+- The default stroke
+
+Overall for the aesthetic:
+- I chose a simple, muted color scheme so I don't detract from the main Visualizer
+- I formated the controls so that are class and seperated into their sections
+- Centered everything on the screen
+- Gave border to thinks for proper contrast
+
+For functionality:
+- Gave the user the power to play their own MP3's on my app
+- Gave the user extensive control over the two visualizers, including:
+    -Line width
+    -Line Fill and stroke
+    -Analyzed data
+    -Giving the ability to toggle them
+
+For the improvements to the aesthetic's and the functionality, I think I scored the 15%
+

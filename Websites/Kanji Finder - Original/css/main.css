@@ -1,0 +1,145 @@
+/* Style Section */
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+
+#ListArea{
+    overflow: hidden;
+    font-size: 40px;
+    max-height: auto;
+}
+
+#ListArea:hover
+{
+    overflow: auto;
+}
+
+#Bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+}
+
+button{
+    cursor: pointer;
+    background-color: #e94040; /* Green */
+    border: 2px solid #a12d2d;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: #e94040;
+    background-color: white;
+}
+
+ul li{
+    cursor: pointer;
+}
+
+span{
+    font-size: 24px;
+    text-align: center;
+    padding: 4px;
+}
+
+#search, #remove{
+    padding: 7px 16px;
+}
+
+span, #search, #remove{
+    
+}
+
+#KanjiInput{
+    border: 2px outset #e94040;
+    border-radius: 4px;
+}
+
+#kanjiInput:focus{
+    
+}
+
+#KanjiSelection{
+    border: 2px outset #e94040;
+    border-radius: 4px;
+}
+
+/* Grid Section */
+
+#KanjiSection{
+    display: grid;
+    grid-template-areas: "Library New Save "
+                         "List Type Search "
+                         "List Kanji Kanji "
+                         "List Kanji Kanji ";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr;
+
+    border: 8px #e94040 outset;
+    padding: 10px;
+
+    margin: auto;
+    margin-top: 50px;
+    max-width: 50%;
+    min-width: 750px;
+    max-height: 290px;
+}
+
+#ListArea{
+    grid-area: List;
+}
+
+#kanjiLibrary{
+    grid-area: Library;
+}
+
+#KanjiDisplay{
+    grid-area: Kanji;
+    display: flex;
+    align-content: flex-start;
+    margin: auto;
+}
+
+#kanjiSymbol{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 140px;
+    align-self: center;
+}
+
+#KanjiText{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    align-self: center;
+    
+}
+
+#KanjiSave{
+    grid-area: Save;
+    margin: 5px;
+}
+
+#Search{
+    grid-area: Search;
+    margin: 5px;
+}
+
+#KanjiButton{
+    grid-area: New;
+    margin: 5px;
+}
+
+.widgets{
+    grid-area: Type;
+    margin: 5px;
+}

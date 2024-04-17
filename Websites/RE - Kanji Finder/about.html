@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./media/icons8-hiragana-a-32.png"/>
+    <title>Re: Kanji Finder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./styles/bulma-override.css">
+</head>
+
+<body>
+    <nav class="navbar has-shadow is-danger">
+        <!-- Logo | Brand -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="./about.html">
+                <img src="./media/kanji.png" alt="logo">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <!-- Menu -->
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-start">
+                <a class="navbar-item has-text-weight-bold" href="./about.html">
+                    About
+                </a>
+
+                <a class="navbar-item" href="./index.html">
+                    App
+                </a>
+            </div> <!-- end navbar-start -->
+        </div>
+    </nav>
+
+    <!-- Product Info -->
+    <div class="section">
+        <div class="hero is-large p-2 is-danger box">
+            <p class="title is-size-1 is-size-2-mobile has-text-centered">
+                Welcome to Re: Kanji Finder!
+            </p>
+            <div class="hero-head has-text-centered columns ">
+                <div class="column">
+                    <span>
+                        <p class="gisshiri-font is-size-1">漢字辞書</p>
+                        <p class="is-size-3 is-size-5-mobile">Re: Kanji Finder is a remake
+                            of a Web API project that I did in college. I remade
+                            the appication using Typescript and Bulma, refactoring
+                            my code and the design of the website. To see the app,
+                            click the "app" button on the bar.
+                        </p>
+                    </span>
+                </div>
+                <div class="column">
+                    <img src="./media/kanji.png" alt="Kanji">
+                </div>
+            </div>
+            <div class="hero-footer">Contact: nsd3407@rit.edu | nicholasd1124@yahoo.com | 845-499-4549</div>
+        </div>
+
+    </div>
+
+    <footer class="">
+        <div class="content has-text-centered">
+            <p>&copy; Nicholas DiGiovanni 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const burgerIcon = document.querySelector("#burger");
+        const navbarMenu = document.querySelector("#nav-links");
+
+        // Add functionality to the taskbar
+        burgerIcon.addEventListener('click', () => {
+            navbarMenu.classList.toggle('is-active');
+        });
+    </script>
+</body>
+
+</html>
